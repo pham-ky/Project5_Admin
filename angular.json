@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DangQuangAdmin"
+    }
+  },
+  "defaultProject": "DangQuangAdmin",
+  "cli": {
+    "analytics": "05a3ca75-7589-4bf5-a0c5-f641de3a1628"
+  }
 }

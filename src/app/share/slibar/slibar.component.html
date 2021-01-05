@@ -1,0 +1,290 @@
+<div class="mdk-drawer  js-mdk-drawer" id="default-drawer" data-align="start" data-opened data-persistent>
+    <div class="mdk-drawer__content">
+        <div class="sidebar sidebar-dark sidebar-left simplebar bg-dark" data-simplebar>
+            <div class="d-flex align-items-center sidebar-p-a border-bottom sidebar-account flex-shrink-0" style="height: 75px;">
+                <a href="index.html" class="flex d-flex align-items-center text-underline-0 text-body">
+                    <span class="flex d-flex flex-column">
+                        <strong class="h5 text-body mb-0">ADMIN</strong>
+                    </span>
+                </a>
+            </div>
+            <div class="tab-content">
+                <div id="sm-menu" class="tab-pane show active" role="tabpanel" aria-labelledby="sm-menu-tab">
+                    <ul class="sidebar-menu flex">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" routerLink="/dashboard">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">home</i>
+                                <span class="sidebar-menu-text">Bảng điều khiển</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" routerLink="/product" >
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_module</i>
+                                <span class="sidebar-menu-text">Quản lý sản phẩm</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" routerLink="/category">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">view_list</i>
+                                <span class="sidebar-menu-text">Quản lý loại sản phẩm</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" routerLink="/user">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>
+                                <span class="sidebar-menu-text">Quản lý người dùng</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#pages_menu0">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">description</i>
+                                <span class="sidebar-menu-text">Quản lý đơn hàng</span>
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse" id="pages_menu0">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/order/1">
+                                        <span class="sidebar-menu-text">Chưa xác thực</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/order/2">
+                                        <span class="sidebar-menu-text">Đã xác thực</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/order/3">
+                                        <span class="sidebar-menu-text">Đang giao</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/order/4">
+                                        <span class="sidebar-menu-text">Đã nhận</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/order/0">
+                                        <span class="sidebar-menu-text">Đã hủy</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#pages_menu">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">assignment</i>
+                                <span class="sidebar-menu-text">Quản lý bài đăng</span>
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse" id="pages_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" routerLink="/">
+                                        <span class="sidebar-menu-text">Loại bài đăng</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button"routerLink="/">
+                                        <span class="sidebar-menu-text">Bài đăng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="sidebar-menu-item active open">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#components_menu">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">developer_board</i>
+                                <span class="sidebar-menu-text">UI Elements</span>
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse show " id="components_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-buttons.html">
+                                        <span class="sidebar-menu-text">Buttons</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-alerts.html">
+                                        <span class="sidebar-menu-text">Alerts</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-avatars.html">
+                                        <span class="sidebar-menu-text">Avatars</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item active">
+                                    <a class="sidebar-menu-button" href="ui-modals.html">
+                                        <span class="sidebar-menu-text">Modals</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-icons.html">
+                                        <span class="sidebar-menu-text">Icons</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-range-sliders.html">
+                                        
+                                        <span class="sidebar-menu-text">Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-datetime.html">
+                                        <span class="sidebar-menu-text">Time &amp; Date</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-tables.html">
+                                        <span class="sidebar-menu-text">Tables</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-tabs.html">
+                                        <span class="sidebar-menu-text">Tabs</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-loaders.html">
+                                        <span class="sidebar-menu-text">Loaders</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-drag.html">
+                                        <span class="sidebar-menu-text">Drag &amp; Drop</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-pagination.html">
+                                        <span class="sidebar-menu-text">Pagination</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="ui-charts.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">donut_small</i>
+                                <span class="sidebar-menu-text">Charts</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="ui-forms.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">text_format</i>
+                                <span class="sidebar-menu-text">Forms</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="fullcalendar.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">date_range</i>
+                                <span class="sidebar-menu-text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="ui-vector-maps.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">location_on</i>
+                                <span class="sidebar-menu-text">Vector Maps</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <div id="sm-account" class="tab-pane">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="edit-account.html">
+                                <span class="sidebar-menu-text">Edit Information</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="edit-account.html">
+                                <span class="sidebar-menu-text">Payments</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="edit-account.html">
+                                <span class="sidebar-menu-text">Billing</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="edit-account.html">
+                                <span class="sidebar-menu-text">Change Password</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="login.html">
+                                <span class="sidebar-menu-text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+                <!-- <div id="sm-settings" class="tab-pane sidebar-p-a">
+                    <div class="form-inline form-group">
+                        <label for="currency" class="text-label flex justify-content-start">Currency</label>
+                        <select name="currency" id="currency" class="custom-select">
+                            <option selected value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </div>
+                    <div class="form-inline form-group">
+                        <label for="show_tags" class="text-label flex justify-content-start">Show Tags</label>
+                        <label for="show_tags">Yes</label>
+                        <div class="custom-control custom-checkbox-toggle custom-control-inline ml-2 mr-0">
+                            <input checked="" type="checkbox" id="show_tags" class="custom-control-input">
+                            <label class="custom-control-label" for="show_tags">Yes</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="api_token" class="text-label flex justify-content-start">API Token</label>
+                        <div class="input-group input-group-merge">
+                            <input id="api_token" type="password" required="" class="form-control form-control-appended"
+                                placeholder="Enter your token">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fa fa-eye"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="api_secret" class="text-label flex justify-content-start">API Secret</label>
+                        <div class="input-group input-group-merge">
+                            <input id="api_secret" type="password" required=""
+                                class="form-control form-control-appended" placeholder="Enter your secret">
+                            <div class="input-group-append">
+                                <div class="input-group-text">
+                                    <span class="fa fa-eye"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-label flex justify-content-start">Price Range</label>
+                        <input type="text" data-toggle="ion-rangeslider" data-min="0" data-max="100" data-from="50"
+                            data-step="5" data-max-postfix="+" data-prefix="$">
+                    </div>
+                    <div>
+                        <label for="category" class="text-label flex justify-content-start">Default Category</label>
+                        <select name="category" id="category" class="custom-select">
+                            <option selected value="admin">Admin Dashboard</option>
+                        </select>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="mt-auto sidebar-p-a sidebar-b-t d-flex flex-column flex-shrink-0">
+                <a class="sidebar-link mb-2" style="height: 35px;" >Settings</a>
+                <a class="sidebar-link" style="height: 35px;">
+                    Logout
+                    <i class="sidebar-menu-icon ml-2 material-icons icon-16pt">exit_to_app</i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="content-y">
+  <h2 style="float: left; margin-right: 67%; ">Bảng điều khiển</h2>
+  <h2>{{month0}}</h2>
+</div>
+<div class="rower">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Đơn hàng </span><br>
+        <span class="info-text">{{totalOdr}}</span>
+        <span class="info-box-number">
+          <span class="material-icons">
+            trending_up
+          </span> {{percentOder}}<small>%</small></span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box1">
+      <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Tổng tiền </span><br>
+        <span class="info-text">{{totalMoney|currency: "VND"}}</span>
+        <span class="info-box-number">
+          <span class="material-icons">
+            trending_up
+          </span> {{percentMoney}}<small>%</small></span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="info-box2">
+      <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Sản phẩm đã bán </span><br>
+        <span class="info-text">{{totalQty}}</span>
+        <span class="info-box-number"><span class="material-icons">
+            trending_up
+          </span> {{percentQty}}<small>%</small></span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+</div>
+<div id="chart">
+  <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
+    [stroke]="chartOptions.stroke" [tooltip]="chartOptions.tooltip" [dataLabels]="chartOptions.dataLabels">
+  </apx-chart>
+</div>

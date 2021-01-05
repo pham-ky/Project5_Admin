@@ -1,0 +1,100 @@
+<div class="content-y">
+    <h2 style="float: left; margin-right: 67%; " *ngIf="item_group_id == 0">Đơn hàng đã hủy</h2>
+    <h2 style="float: left; margin-right: 67%; " *ngIf="item_group_id == 1">Đơn hàng chưa xác thực</h2>
+    <h2 style="float: left; margin-right: 67%; " *ngIf="item_group_id == 2">Đơn hàng đã xác thực</h2>
+    <h2 style="float: left; margin-right: 67%; " *ngIf="item_group_id == 3">Đơn hàng đang giao</h2>
+    <h2 style="float: left; margin-right: 67%; " *ngIf="item_group_id == 4">Đơn hàng thành công</h2>
+</div>
+
+<div class="table">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col" style="text-align: center;">TT</th>
+                <th scope="col">Tên người nhận</th>
+                <th scope="col">Số điện thoại</th>
+                <th scope="col">Địa chỉ người nhận</th>
+                <th scope="col">Ghi chú</th>
+                <th scope="col" style="text-align: center;">Trạng thái</th>
+                <th scope="col" style="text-align: center;">Chức năng</th>
+            </tr>
+        </thead>
+        <!-- Đơn hàng hủy -->
+        <tbody *ngIf="item_group_id == 0">
+            <tr *ngFor="let o of list; index as i">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{o.orderNameOfConsignee}}</td>
+                <td>{{o.orderPhone}}</td>
+                <td>{{o.orderAddress}}</td>
+                <td>{{o.orderNote}}</td>
+                <th scope="row" style="text-align: center;">Đã hủy</th>
+                <td style="text-align: center;"><span class="material-icons">visibility</span></td>
+            </tr>
+        </tbody>
+        <!-- Đơn hàng chưa xác nhận -->
+        <tbody *ngIf="item_group_id == 1">
+            <tr *ngFor="let o of list; index as i">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{o.orderNameOfConsignee}}</td>
+                <td>{{o.orderPhone}}</td>
+                <td>{{o.orderAddress}}</td>
+                <td>{{o.orderNote}}</td>
+                <td style="text-align: center;"><select name="status" id="">
+                        <option value="1" selected>Chưa xác thực</option>
+                        <option value="2">Xác thực</option>
+                        <option value="0">Hủy</option>
+                    </select></td>
+                <td style="text-align: center;"><span class="material-icons">visibility</span></td>
+            </tr>
+        </tbody>
+        <!-- Đơn hàng đã xác nhận -->
+        <tbody *ngIf="item_group_id == 2">
+            <tr *ngFor="let o of list; index as i">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{o.orderNameOfConsignee}}</td>
+                <td>{{o.orderPhone}}</td>
+                <td>{{o.orderAddress}}</td>
+                <td>{{o.orderNote}}</td>
+                <td style="text-align: center;"><select name="status" id="">
+                        <option value="2" selected>Đã xác thực</option>
+                        <option value="3">Giao hàng</option>
+                        <option value="0">Hủy</option>
+                    </select></td>
+                <td style="text-align: center;"><span class="material-icons">visibility</span></td>
+            </tr>
+        </tbody>
+        <!-- Đơn hàng đang giao -->
+        <tbody *ngIf="item_group_id == 3">
+            <tr *ngFor="let o of list; index as i">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{o.orderNameOfConsignee}}</td>
+                <td>{{o.orderPhone}}</td>
+                <td>{{o.orderAddress}}</td>
+                <td>{{o.orderNote}}</td>
+                <td style="text-align: center;"><select name="status" id="">
+                        <option value="3" selected>Giao hàng</option>
+                        <option value="4">Thành công</option>
+                        <option value="0">Hủy</option>
+                    </select></td>
+                <td style="text-align: center;"><span class="material-icons">visibility</span></td>
+            </tr>
+        </tbody>
+        <!-- Đơn hàng thành công -->
+        <tbody *ngIf="item_group_id == 4">
+            <tr *ngFor="let o of list; index as i">
+                <th scope="row" style="text-align: center;">{{i+1}}</th>
+                <td>{{o.orderNameOfConsignee}}</td>
+                <td>{{o.orderPhone}}</td>
+                <td>{{o.orderAddress}}</td>
+                <td>{{o.orderNote}}</td>
+                <th scope="row" style="text-align: center;">Thành công</th>
+                <td style="text-align: center;"><span class="material-icons">visibility</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div class="shop_toolbar t_bottom">
+        <ngb-pagination [collectionSize]="totalItems" [pageSize]="pageSize" [(page)]="page"
+            [maxSize]="10" [rotate]="true" (pageChange)="loadPage($event)">
+        </ngb-pagination>
+    </div> -->
+</div>
